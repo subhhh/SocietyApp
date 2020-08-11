@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="complain"
+                    android:id="@+id/complainTv"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ajay Sahoo"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:drawablePadding="5dp"
+                    />
+                <TextView
+                    android:id="@+id/flatnoTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B wing - 333"
+                    android:textSize="13sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/subjectTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Water is not coming properly"
+                    android:textSize="15sp"
+                    android:textColor="#388E3C"
+                    android:drawablePadding="5dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/createddtTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9.40 AM"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                    android:textSize="13sp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="28/09/2019"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    android:drawablePadding="5dp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/viewTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="view"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/gen_black"
+                    android:textAllCaps="true"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="view"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:textColor="@color/gen_black"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

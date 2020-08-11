@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuHome"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/menuProfile"
+            android:title="My Profile"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/visitorlist"
+            android:title="Visitor List"
+            android:icon="@drawable/ic_people"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/bookings"
+            android:icon="@drawable/ic_event"
+            android:title="My Bookings"/>
+
+        <item
+            android:id="@+id/payments"
+            android:icon="@drawable/ic_history"
+            android:visible="false"
+            android:title="Payment History"/>
+
+        <item
+            android:id="@+id/menuLogout"
+            android:title="Logout"
+            android:icon="@drawable/ic_exit_to_app"/>
+    </group>
+</menu>

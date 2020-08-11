@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_residential_small"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/nameEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Name"
+        android:visibility="gone"
+        android:inputType="text"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorHighlight="@color/white"/>
+
+
+
+        <EditText
+            android:id="@+id/phoneEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Phone Number"
+            android:maxLength="10"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColorHighlight="@color/white"/>
+
+        <EditText
+            android:id="@+id/passwordEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColorHighlight="@color/white"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:visibility="invisible"
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember Me"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="false"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:shadowColor="@android:color/transparent"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_button_style"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/createaccTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:layout_weight="1"
+                android:shadowColor="@android:color/transparent"
+                android:padding="15dp"
+                android:layout_margin="2dp"
+                android:gravity="start"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/forgotpassTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:shadowColor="@android:color/transparent"
+                android:padding="15dp"
+                android:gravity="end"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

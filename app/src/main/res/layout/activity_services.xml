@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Activity.ServicesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:visibility="visible"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/MyDarkToolbarStyle"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@android:color/black">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:text="Services"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home Services"
+        android:textColor="@color/gen_black"
+        android:textSize="18sp"
+        android:layout_margin="15dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:id="@+id/serviceRv">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/nodataTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Data Found"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="#E31A1A"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
+
+
+    <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="4">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/plumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#CECDCD"
+                android:fadingEdgeLength="5dp"
+                android:requiresFadingEdge="horizontal"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Plumber"
+                    android:textColor="@color/gen_black"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:drawablePadding="10dp"
+                    android:layout_margin="5dp"
+                    android:drawableTop="@drawable/ic_plumber">
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/medicines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#CECDCD"
+                android:fadingEdgeLength="5dp"
+                android:requiresFadingEdge="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Electrician"
+                    android:textColor="@color/gen_black"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:drawablePadding="10dp"
+                    android:layout_margin="5dp"
+                    android:drawableTop="@drawable/ic_electrician">
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#CECDCD"
+                android:fadingEdgeLength="5dp"
+                android:requiresFadingEdge="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Maid"
+                    android:textColor="@color/gen_black"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:drawablePadding="10dp"
+                    android:layout_margin="5dp"
+                    android:drawableTop="@drawable/ic_maid">
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#CECDCD"
+                android:fadingEdgeLength="5dp"
+                android:requiresFadingEdge="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:drawableTop="@drawable/ic_security"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="Security"
+                    android:textColor="@color/gen_black"
+                    android:textSize="10sp">
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    -->
