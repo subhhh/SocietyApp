@@ -186,6 +186,7 @@ public class NewComplaintsActivity extends AppCompatActivity {
                         Toast.makeText(NewComplaintsActivity.this, message ,Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(NewComplaintsActivity.this,MainActivity.class));
                         finish();
+                    //    finishAffinity();
                     }
                     else {
                         Toast.makeText(NewComplaintsActivity.this,"oops!"+message,Toast.LENGTH_SHORT).show();
