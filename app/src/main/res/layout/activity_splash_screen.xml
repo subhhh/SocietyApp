@@ -43,42 +43,4 @@
 
     </RelativeLayout>
 </RelativeLayout>
-<!--
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/white"
-    tools:context=".Activity.SplashScreenActivity">
 
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_residential"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Society"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="40sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Management"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="35sp"/>
-
-
-
-
-
-</LinearLayout>-->
