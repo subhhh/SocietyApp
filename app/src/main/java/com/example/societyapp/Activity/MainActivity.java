@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     ApiInterface apiService;
     TextView username;
     ImageView image;
+    ProgressBar my_progress_bar;
     String imagepath ="https://ivrics.com/App/assets/backend_panel/images/profile/large/";
 
 
@@ -81,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         userId = RegPrefManager.getInstance(this).getUserId();
         token = RegPrefManager.getInstance(this).getTokenAuth();
 
+        my_progress_bar= findViewById(R.id.my_progress_bar);
         visitorlist=findViewById(R.id.visitorlist);
         complaintslist=findViewById(R.id.complaintslist);
         facilitieslist=findViewById(R.id.facilitieslist);

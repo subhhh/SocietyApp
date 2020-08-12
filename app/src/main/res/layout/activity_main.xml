@@ -297,11 +297,17 @@
 
         </androidx.cardview.widget.CardView>
 
-
-
-
     </LinearLayout>
 
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/my_progress_bar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/imageViewLogo"
+        android:indeterminateTint="@color/colorPrimary"
+        />
 
 
 
